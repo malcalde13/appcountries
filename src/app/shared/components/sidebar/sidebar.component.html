@@ -3,14 +3,32 @@
 
 <ul class="list-group">
 
-  <li routerLink='Home' routerLinkActive="router-link-active"
-    class="list-group-item">
-    Home Pagee
+  <li routerLink="" routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact: true}" class="list-group-item">
+    Home Page
   </li>
 
-  <li routerLink='About' routerLinkActive="router-link-active"
-  class="list-group-item">
+  <li routerLink="about"
+      routerLinkActive="active"
+      class="list-group-item">
     About Page
   </li>
 
+  <li routerLink="contact"
+      routerLinkActive="active"
+      class="list-group-item">
+    Contact Page
+  </li>
+
 </ul>
+
+
+<!-- RouterLink Vacio, porque el path que esta en app-routin
+ tambien esta vacio.
+  utilizo [routerLinkActiveOptions]="{exact: true}" para indicar que el path
+  tiene que ser identico, exactamente como esta definido,
+  en este caso lcaolhost:4200, para el home
+  Entonces indicando esto el routerlinkactive va a marcar en azul si cumple
+  con el path
+  En caso de sea lcaolhost:4200/about, homepage no se va a marcar en azul
+  ya que no es exactamente la url que indicamos anteriormente-->

@@ -5,23 +5,28 @@ import { RouterModule } from '@angular/router';
 import { HomePageComponent } from './pages/homePage/homePage.component';
 import { AboutPageComponent } from './pages/aboutPage/aboutPage.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { ContactPageComponent } from './components/contactPage/contactPage.component';
+
 
 
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
+  declarations: [
     HomePageComponent,
     AboutPageComponent,
     SidebarComponent,
-    RouterModule
+    ContactPageComponent
+  ],
+  imports: [
+    CommonModule,
+    RouterModule,
   ],
 
   exports: [
     HomePageComponent,
     AboutPageComponent,
     SidebarComponent,
+    ContactPageComponent,
     RouterModule
   ]
 })

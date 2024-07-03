@@ -2,12 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'shared-home-page',
-  templateUrl: './homePage.component.html',
+  selector: 'sahred-contact-page',
+  templateUrl: './contactPage.component.html',
   styles: `
     :host {
       display: block;
     }
   `,
 })
-export class HomePageComponent { }
+export class ContactPageComponent { }

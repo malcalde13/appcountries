@@ -3,11 +3,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'shared-about-page',
-  standalone: true,
-  imports: [
-    CommonModule,
-  ],
-  template: `<p>aboutPage works!</p>`,
+  templateUrl: 'aboutPage.component.html',
   styles: `
     :host {
       display: block;
