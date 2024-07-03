@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomePageComponent } from './shared/pages/homePage/homePage.component';
 import { AboutPageComponent } from './shared/pages/aboutPage/aboutPage.component';
-import { ContactPageComponent } from './shared/components/contactPage/contactPage.component';
+import { ContactPageComponent } from './shared/pages/contactPage/contactPage.component';
 
 //configuracion basica del router
 const routes: Routes = [
